@@ -1,0 +1,33 @@
+{
+  "name": "grokking_algorithms-ts",
+  "version": "1.0.0",
+  "description": "Typescript implementation of algorithms from the book Grokking Algorithms.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "fast-check": "^1.17.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qeireal/grokking_algorithms-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "jest",
+    "tdd",
+    "algorithms"
+  ],
+  "author": "Kirill Galushko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qeireal/grokking_algorithms-ts/issues"
+  },
+  "homepage": "https://github.com/qeireal/grokking_algorithms-ts#readme"
+}
