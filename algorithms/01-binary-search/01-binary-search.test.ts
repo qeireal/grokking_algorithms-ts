@@ -9,28 +9,12 @@ import {
 } from 'fast-check';
 
 import {binarySearch} from './01-binary-search';
-
-type SortedValues = number | string | null;
-
-const filterFunction = <T>(array: ReadonlyArray<T>, valueToFilter?: T) =>
-    array.filter(
-        (value, index, arr) =>
-        arr.indexOf(value) === index && value !== valueToFilter
-    );
-
-const sortFunction = <T>(array: ReadonlyArray<T>) =>
-    [...array].sort((a: T, b: T) => {
-        if (a > b) {
-            return 1;
-        }
-        if (b > a) {
-            return -1;
-        }
-        return 0;
-    });
+import {filterArray} from '../../utils/filterArray';
+import {sortArray} from '../../utils/sortArray';
+import {SortedValues} from '../../types/SortedValues';
 
 const prepareArray = <T>(array: ReadonlyArray<T>, valueToFilter?: T) =>
-    sortFunction(filterFunction(array, valueToFilter));
+    sortArray(filterArray(array, valueToFilter));
 
 describe('Property tests', () => {
   function propertyTest(entity: Arbitrary<SortedValues>) {
