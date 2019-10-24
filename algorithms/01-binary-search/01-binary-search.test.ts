@@ -8,10 +8,10 @@ import {
     string as fcString
 } from 'fast-check';
 
+import {filterArray} from '@utils/filterArray';
+import {sortArray} from '@utils/sortArray';
+import {SortedValues} from '@customTypes/SortedValues';
 import {binarySearch} from './01-binary-search';
-import {filterArray} from '../../utils/filterArray';
-import {sortArray} from '../../utils/sortArray';
-import {SortedValues} from '../../types/SortedValues';
 
 const prepareArray = <T>(array: ReadonlyArray<T>, valueToFilter?: T) =>
     sortArray(filterArray(array, valueToFilter));

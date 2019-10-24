@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "declaration": false,
+        "noImplicitThis": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "strictNullChecks": true,
+        "paths": {
+            "@customTypes/*": ["./customTypes/*"],
+            "@utils/*": ["./utils/*"]
+        }
+    }
+}

@@ -7,10 +7,10 @@ import {
     string as fcString
 } from 'fast-check';
 
+import {sortArray} from '@utils/sortArray';
+import {compareArrays} from '@utils/compareArrays';
+import {SortedValues} from '@customTypes/SortedValues';
 import {selectionSort} from './02-selection_sort';
-import {sortArray} from '../../utils/sortArray';
-import {compareArrays} from '../../utils/compareArrays';
-import {SortedValues} from '../../types/SortedValues';
 
 describe('Property tests', () => {
   function propertyTest(entity: Arbitrary<SortedValues>) {

@@ -1,6 +1,6 @@
-import {findIndexOfMin} from '../../utils/findIndexOfMin';
+import {findIndexOfMin} from '@utils/findIndexOfMin';
   
-export function selectionSort<T>(array: T[] | null): T[] {
+export function selectionSort<T>(array: T[] | null): T[] | null {
     if (!array) {
         return null;
     }
