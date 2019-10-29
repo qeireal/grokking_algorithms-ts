@@ -10,6 +10,11 @@
         "paths": {
             "@customTypes/*": ["./customTypes/*"],
             "@utils/*": ["./utils/*"]
-        }
+        },
+        "target": "es3",
+        "lib": [
+            "es6",
+            "esnext.bigint"
+        ]
     }
 }
